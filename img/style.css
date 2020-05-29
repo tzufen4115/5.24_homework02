@@ -2,5 +2,17 @@
     background-color: rgb(56, 56, 56);
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 微軟正黑體;
+}
+
+#title_logo{
+    margin-left: 374px;
+}
+/* 橫幅 */
+#banner{
+    background-image: url(./img/invalid-name.png);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
 }
