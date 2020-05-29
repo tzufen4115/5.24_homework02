@@ -1,18 +1,221 @@
 *{
-    background-color: rgb(56, 56, 56);
+    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 微軟正黑體;
 }
+/* 導覽列 */
+nav{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    position: fixed;
+    
+}
 
 #title_logo{
-    margin-left: 374px;
+    margin-left: 360px;
+    margin-top: 65px;
 }
+
+/* 導覽列選單 */
+#_nav{
+    
+    display: grid;
+    grid-template-columns: 56% 22% 22%;
+    text-align: right; 
+}
+
+#_nav a{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    transition:0.1s;
+    margin-top: 80px;
+    padding: 0 20px;
+}
+
+#_nav a:hover{
+    color: rgb(255, 255, 255);
+    text-shadow:  2px 2px 2px rgb(63, 53, 53);
+}
+
+#net{
+    margin-top: 68px;
+    margin-left: 80px;
+}
+#net a{
+    padding: 0 20px;
+}
+
 /* 橫幅 */
 #banner{
     background-image: url(./img/invalid-name.png);
     background-size: cover;
     height: 100vh;
     background-position: center;
+    /* 切板 */
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+
+/* 背景顏色 */
+body{
+    background-color: #F1F0EC;
+}
+
+/* 內容 */
+section{
+    width: 1180px;
+    margin: 20px auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    
+}
+
+h1{
+    
+    font-size: 32px;
+    font-weight: 300;
+    letter-spacing: 9.6px;
+    text-align: center;
+    margin: 50px auto 40px auto;
+}
+
+.p1{
+    background-color: #fff;
+    margin: 5px;
+    padding: 30px;
+    text-align: center; 
+    
+}
+
+.subtitle{
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 3.6px;
+    color: #49aa45;
+}
+
+.headline{
+    width: 325px;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+hr{
+    width: 310px;
+    height: 1px;
+    margin-left: 5px;
+}
+
+p{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    text-align: left;
+    width: 310px;
+    margin-left: 5px;
+}
+/* 推薦飲品 */
+
+#best-drink{
+    width: 1200px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin: 10px auto 0 auto;
+    padding-left: 510px;
+}
+#best-drink>div>h2{
+    font-size: 32px;
+    font-weight: 100;
+    letter-spacing: 8.4px;
+    color: #f5bb28;
+    text-align: left;
+}
+
+#best-drink>div>h2>span{
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 2.8px;
+    color: #cccccc;
+}
+
+#best-drink>div>p{
+    margin-top: 50px;
+    font-size: 20px;
+    line-height: 2;
+    letter-spacing: 2px;
+    text-align: left;
+    color: #000000;
+    margin-left: 2px;
+}
+
+/* 經營理念 */
+#concept > div {
+    width: 1200px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+#concept > div>img{
+    width: 620px;
+    height: 420px;
+    border: 10px solid #fff;
+}
+#concept-p{
+    margin-left: 45px;
+    text-align: left;
+}
+#concept-p>h4{
+    font-size: 22pt;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+#concept-p>p{
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 2.5;
+    letter-spacing: 6px;
+}
+#concept > div>div>div{
+    margin-top: 68px;
+}
+
+#concept > div>div>div>a{
+    letter-spacing: 5.4px;
+    border: 2px solid #252525;
+    padding: 17px 67px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #000000;
+    transition:0.1s;
+    
+}
+#concept > div>div>div>a:hover{
+    color: #fff;
+    background-color: #252525;
+    border: 2px solid #fff;
+}
+
+/* 底 */
+footer{
+    padding-top:100px;
+    height: 350px;
+    text-align: center;
+    margin: 20px auto 20px auto;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 3;
+    letter-spacing: 3.6px;
+}
+footer>h6{
+    padding-top: 60px;
 }
